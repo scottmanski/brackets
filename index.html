@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="index.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  
+<div class="container">
+<div id="step-1">
+        <p class="text-center"><img src="img/HC5_logo.png" alt="Hidden Cup 5 logo" width="25%"/></p>
+        <p class="lead">Welcome to the Hidden Cup 5 Player guessing competition!</p>
+        <p>Here you can guess which hero was played by which participant.
+           All guesses will be published on a scoreboard when the competition is over.
+           The persons with most correct guesses win!</p>
+        <p>There is no prize. But you may get the right to brag about being at the top of the scoreboard.</p>
+        <p style="color: #ccc;">If you have special knowledge, that means if you are an admin for HC5 or a player in the
+            top 16, you can still participate, but correct guesses will be a lot less impressive.</p>
+        <p class="text-center">
+            <button class="btn btn-secondary btn-lg mb-5" onclick="step2()">I understand that. Next!</button>
+        </p>
+    </div>
+
+<div id="step-2" class="mainWrapper hidden">
+  
+
+<div data-round="1" data-set="1" data-p="1" class="boxbg"></div>
+<div data-round="1" data-set="1" data-p="2" class="boxbg"></div>
+<div data-round="1" data-set="2" data-p="1" class="boxbg"></div>
+<div data-round="1" data-set="2" data-p="2" class="boxbg"></div>
+<div data-round="1" data-set="3" data-p="1" class="boxbg"></div>
+<div data-round="1" data-set="3" data-p="2" class="boxbg"></div>
+<div data-round="1" data-set="4" data-p="1" class="boxbg"></div>
+<div data-round="1" data-set="4" data-p="2" class="boxbg"></div>
+<div data-round="1" data-set="5" data-p="1" class="boxbg"></div>
+<div data-round="1" data-set="5" data-p="2" class="boxbg"></div>
+<div data-round="1" data-set="6" data-p="1" class="boxbg"></div>
+<div data-round="1" data-set="6" data-p="2" class="boxbg"></div>
+<div data-round="1" data-set="7" data-p="1" class="boxbg"></div>
+<div data-round="1" data-set="7" data-p="2" class="boxbg"></div>
+<div data-round="1" data-set="8" data-p="1" class="boxbg"></div>
+<div data-round="1" data-set="8" data-p="2" class="boxbg"></div>
+
+<div data-round="2" data-set="1" data-p="1" class="boxbg"></div>
+<div data-round="2" data-set="1" data-p="2" class="boxbg"></div>
+<div data-round="2" data-set="2" data-p="1" class="boxbg"></div>
+<div data-round="2" data-set="2" data-p="2" class="boxbg"></div>
+<div data-round="2" data-set="3" data-p="1" class="boxbg"></div>
+<div data-round="2" data-set="3" data-p="2" class="boxbg"></div>
+<div data-round="2" data-set="4" data-p="1" class="boxbg"></div>
+<div data-round="2" data-set="4" data-p="2" class="boxbg"></div>
+
+<div data-round="3" data-set="1" data-p="1" class="boxbg"></div>
+<div data-round="3" data-set="1" data-p="2" class="boxbg"></div>
+<div data-round="3" data-set="2" data-p="1" class="boxbg"></div>
+<div data-round="3" data-set="2" data-p="2" class="boxbg"></div>
+
+<div data-round="4" data-set="1" data-p="1" class="boxbg"></div>
+<div data-round="4" data-set="1" data-p="2" class="boxbg"></div>
+<div data-round="4" data-set="2" data-p="1" class="boxbg"></div>
+<div data-round="4" data-set="2" data-p="2" class="boxbg"></div>
+
+<div data-round="5" data-set="1" data-p="1" class="boxbg"></div>
+<div data-round="5" data-set="2" data-p="1" class="boxbg"></div>
+
+
+
+
+<!-- <div data-round="1" data-set="1" class="bracket hbar" style="transform: translate(10px, 143px); width: 270px;"></div>
+
+<div data-round="1" data-set="2" class="bracket hbar" style="transform: translate(10px, 266px); width: 270px;"></div>
+
+<div data-round="2" data-set="1" class="bracket vbar" style="transform: translate(277px, 143px); height: 129px;"></div>
+ -->
+
+<div data-round="1" data-set="1" class="bracket hbar"></div>
+<div data-round="1" data-set="2" class="bracket hbar"></div>
+<div data-round="1" data-set="3" class="bracket hbar"></div>
+<div data-round="1" data-set="4" class="bracket hbar"></div>
+<div data-round="1" data-set="5" class="bracket hbar"></div>
+<div data-round="1" data-set="6" class="bracket hbar"></div>
+<div data-round="1" data-set="7" class="bracket hbar"></div>
+<div data-round="1" data-set="8" class="bracket hbar"></div>
+
+<div data-round="2" data-set="1" class="bracket hbar"></div>
+<div data-round="2" data-set="2" class="bracket hbar"></div>
+<div data-round="2" data-set="3" class="bracket hbar"></div>
+<div data-round="2" data-set="4" class="bracket hbar"></div>
+
+<div data-round="3" data-set="1" class="bracket hbar"></div>
+<div data-round="3" data-set="2" class="bracket hbar"></div>
+
+<div data-round="4" data-set="1" class="bracket hbar"></div>
+<!-- <div data-round="4" data-set="2" class="bracket hbar"></div> -->
+
+
+
+
+<div data-round="2" data-set="1" class="bracket vbar"></div>
+<div data-round="2" data-set="2" class="bracket vbar"></div>
+<div data-round="2" data-set="3" class="bracket vbar"></div>
+<div data-round="2" data-set="4" class="bracket vbar"></div>
+
+<div data-round="3" data-set="1" class="bracket vbar"></div>
+<div data-round="3" data-set="2" class="bracket vbar"></div>
+
+<div data-round="4" data-set="1" class="bracket vbar"></div>
+
+
+
+<div data-round="1" data-set="1" data-p="1" data-player="Vasco da Gama" class="heroWrapper" onclick="g(this)">
+  <div class="name">Vasco da Gama</div>
+  <div class="icon"><img src="img/heroes/Vasco da Gama.png" ;=""></div>
+</div>
+
+<div data-round="1" data-set="1" data-p="2" data-player="Pachacuti" class="heroWrapper" onclick="g(this)">
+  <div class="name">Pachacuti</div>
+  <div class="icon"><img src="img/heroes/Pachacuti.png" ;=""></div>
+</div>
+
+
+<div data-round="1" data-set="2" data-p="1" data-player="Sumanguru" class="heroWrapper" onclick="g(this)">
+  <div class="name">Sumanguru</div>
+  <div class="icon"><img src="img/heroes/Sumanguru.png" ;=""></div>
+</div>
+
+<div data-round="1" data-set="2" data-p="2" data-player="Jean Bureau" class="heroWrapper" onclick="g(this)">
+  <div class="name">Jean Bureau</div>
+  <div class="icon"><img src="img/heroes/Jean Bureau.png" ;=""></div>
+</div>
+
+
+<div data-round="1" data-set="3" data-p="1" data-player="Jadwiga" class="heroWrapper" onclick="g(this)">
+  <div class="name">Jadwiga</div>
+  <div class="icon"><img src="img/heroes/Jadwiga.png" ;=""></div>
+</div>
+
+<div data-round="1" data-set="3" data-p="2" data-player="Otto the Great" class="heroWrapper" onclick="g(this)">
+  <div class="name">Otto the Great</div>
+  <div class="icon"><img src="img/heroes/Otto the Great.png" ;=""></div>
+</div>
+
+
+<div data-round="1" data-set="4" data-p="1" data-player="Gregory VII" class="heroWrapper" onclick="g(this)">
+  <div class="name">Gregory VII</div>
+  <div class="icon"><img src="img/heroes/Gregory VII.png" ;=""></div>
+</div>
+
+<div data-round="1" data-set="4" data-p="2" data-player="Gajah Mada" class="heroWrapper" onclick="g(this)">
+  <div class="name">Gajah Mada</div>
+  <div class="icon"><img src="img/heroes/Gajah Mada.png" ;=""></div>
+</div>
+
+
+
+
+
+<div data-round="1" data-set="5" data-p="1" data-player="King Stephen" class="heroWrapper" onclick="g(this)">
+  <div class="name">King Stephen</div>
+  <div class="icon"><img src="img/heroes/King Stephen.png" ;=""></div>
+</div>
+
+<div data-round="1" data-set="5" data-p="2" data-player="Selim the Grim" class="heroWrapper" onclick="g(this)">
+  <div class="name">Selim the Grim</div>
+  <div class="icon"><img src="img/heroes/Selim the Grim.png" ;=""></div>
+</div>
+
+
+<div data-round="1" data-set="6" data-p="1" data-player="Khosrau" class="heroWrapper" onclick="g(this)">
+  <div class="name">Khosrau</div>
+  <div class="icon"><img src="img/heroes/Khosrau.png" ;=""></div>
+</div>
+
+<div data-round="1" data-set="6" data-p="2" data-player="Emperor Sigismund" class="heroWrapper" onclick="g(this)">
+  <div class="name">Emperor Sigismund</div>
+  <div class="icon"><img src="img/heroes/Emperor Sigismund.png" ;=""></div>
+</div>
+
+
+<div data-round="1" data-set="7" data-p="1" data-player="Alfred the Alpaca" class="heroWrapper" onclick="g(this)">
+  <div class="name">Alfred the Alpaca</div>
+  <div class="icon"><img src="img/heroes/Alfred the Alpaca.png" ;=""></div>
+</div>
+
+<div data-round="1" data-set="7" data-p="2" data-player="Jan Zizka" class="heroWrapper" onclick="g(this)">
+  <div class="name">Jan Zizka</div>
+  <div class="icon"><img src="img/heroes/Jan Zizka.png" ;=""></div>
+</div>
+
+
+<div data-round="1" data-set="8" data-p="1" data-player="Alexios Komnenos" class="heroWrapper" onclick="g(this)">
+  <div class="name">Alexios Komnenos</div>
+  <div class="icon"><img src="img/heroes/Alexios Komnenos.png" ;=""></div>
+</div>
+
+<div data-round="1" data-set="8" data-p="2" data-player="Robert Guiscard" class="heroWrapper" onclick="g(this)">
+  <div class="name">Robert Guiscard</div>
+  <div class="icon"><img src="img/heroes/Robert Guiscard.png" ;=""></div>
+</div>
+
+
+
+
+
+        
+
+<div data-round="2" data-set="1" data-p="1" class="heroWrapper" style="transform: translate(334.5px, 157px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="2" data-set="1" data-p="2" class="heroWrapper" style="transform: translate(334.5px, 220px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+
+<div data-round="2" data-set="2" data-p="1" class="heroWrapper" style="transform: translate(304px, 397px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="2" data-set="2" data-p="2" class="heroWrapper" style="transform: translate(304px, 460px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="2" data-set="3" data-p="1" class="heroWrapper" style="transform: translate(304px, 644px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="2" data-set="3" data-p="2" class="heroWrapper" style="transform: translate(304px, 707px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="2" data-set="4" data-p="1" class="heroWrapper" style="transform: translate(304px, 891px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="2" data-set="4" data-p="2" class="heroWrapper" style="transform: translate(304px, 954px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+
+
+
+
+
+
+<div data-round="3" data-set="1" data-p="1" class="heroWrapper" style="transform: translate(596px, 273px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="3" data-set="1" data-p="2" class="heroWrapper" style="transform: translate(596px, 337px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+
+<div data-round="3" data-set="2" data-p="1" class="heroWrapper" style="transform: translate(596px, 767px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="3" data-set="2" data-p="2" class="heroWrapper" style="transform: translate(596px, 831px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+
+
+
+<div data-round="4" data-set="1" data-p="1" class="heroWrapper" style="transform: translate(890px, 520px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="4" data-set="1" data-p="2" class="heroWrapper" style="transform: translate(890px, 584px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+
+<div data-round="4" data-set="2" data-p="1" class="heroWrapper" style="transform: translate(890px, 767px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="4" data-set="2" data-p="2" class="heroWrapper" style="transform: translate(890px, 831px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+
+
+<div data-round="5" data-set="1" data-p="1" class="heroWrapper" style="transform: translate(1184px, 552px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+<div data-round="5" data-set="2" data-p="1" class="heroWrapper" style="transform: translate(1184px, 799px); display: none" onclick="g(this)">
+  <div class="name"></div>
+  <div class="icon"><img ;=""></div>
+</div>
+
+
+
+
+<img class="logo" src="./img/HC5_logo.png"/>
+
+<div class="round" style="left: 0px;">
+  <div class="title">ROUND OF 16</div>
+  <div class="dates">Sun-Wed Feb 25<sup>th</sup>-28<sup>th</sup></div>
+  <div class="bo"><em>Best of 7</em></div>
+</div>
+
+<div class="round" style="left: 280px;">
+  <div class="title">QUARTERFINALS</div>
+  <div class="dates">Thu&Fri Feb 29<sup>th</sup>-Mar 1<sup>st</sup></div>
+  <div class="bo"><em>Best of 7</em></div>
+</div>
+
+<div class="round" style="left: 562px;">
+  <div class="title">SEMIFINALS</div>
+  <div class="dates">Sat Mar 2<sup>nd</sup></div>
+  <div class="bo"><em>Best of 7</em></div>
+</div>
+
+<div class="round" style="left: 876px;">
+  <div class="title">FINALS</div>
+  <div class="dates">Sun Mar 3<sup>rd</sup></div>
+  <div class="bo"><em>Best of 9</em></div>
+</div>
+
+<div class="round" style="left: 876px; top: 670px;">
+  <div class="title">3<sup>rd</sup> PLACE</div>
+  <div class="dates">Sun Mar 3<sup>rd</sup></div>
+  <div class="bo"><em>Best of 5</em></div>
+</div>
+
+<div class="round" style="left: 1178px; top: 610px;">
+  <div class="bo" style="font-size: 18px;"><em>CHAMPION</em></div>
+</div>
+
+<div class="round" style="left: 1178px; top: 850px;">
+  <div class="bo" style="font-size: 18px;"><em>3<sup>rd</sup> PLACE</em></div>
+</div>
+
+
+<p class="text-center" style="position: absolute; top: 1000px; left: 400px; width: 1000px;">
+            <button class="btn btn-secondary btn-lg mb-5" onclick="step1()">Back</button>
+            <button class="btn btn-secondary btn-lg mb-5" onclick="reset()">Reset</button>
+            <button class="btn btn-primary btn-lg mb-5" onclick="step3()">Confirm and Next</button>
+        </p>
+
+</div>
+
+<div id="step-3" class="hidden">
+        <p class="mt-5 lead">How would you like to appear on the leaderboard?</p>
+
+        <div class="form-group">
+            <label for="inputUsername">Username</label>
+            <input type="text" class="form-control" id="inputUsername" aria-describedby="twitchHelp">
+            <small id="twitchHelp" class="form-text text-muted">For example the username you use on Twitch or Discord</small>
+        </div>
+
+        <p class="text-center">
+            <button class="btn btn-secondary btn-lg mb-5" onclick="step2()">Go back</button>
+            <button class="btn btn-primary btn-lg mb-5" onclick="submit()">Submit Guess</button>
+        </p>
+    </div>
+
+
+    <div id="step-5" class="hidden">
+        <p class="text-center"><img src="img/HC5_logo.png" alt="Hidden Cup 5 logo"/></p>
+        <p id="response" class="lead text-center mt-5"></p>
+    </div>
+
+
+</div>
+<script>
+let sets = [4, 2, 2];
+let nonull = (element) => element == null | element == "null";
+
+const gridConfig = [
+  90,
+  150,
+  213,
+  273,
+  337,
+  397,
+  460,
+  520,
+  584,
+  644,
+  707,
+  767,
+  831,
+  891,
+  954,
+  1014,
+];
+
+let Sets = [8, 4, 2, 2, 2];
+for (let j = 1; j <= 4; j++) {
+  for (let i = 1; i <= Sets[j-1]; i++) {
+    hero = document.querySelector(".heroWrapper[data-round=" + CSS.escape(j) + "][data-set=" + CSS.escape(i) + "][data-p=" + CSS.escape(1) + "]");
+    hero.style.transform = "translate(" + ((j-1)*294 + 40.5) + "px, " + (gridConfig[(2*i-1)*2**(j-1)-1]+7) + "px)";
+    
+      hero = document.querySelector(".heroWrapper[data-round=" + CSS.escape(j) + "][data-set=" + CSS.escape(i) + "][data-p=" + CSS.escape(2) + "]");
+    hero.style.transform = "translate(" + ((j-1)*294 + 40.5) + "px, " + (gridConfig[(2*i-1)*2**(j-1)]+3.5) + "px)";
+    
+    
+        box = document.querySelector(".boxbg[data-round=" + CSS.escape(j) + "][data-set=" + CSS.escape(i) + "][data-p=" + CSS.escape(1) + "]");
+    box.style.transform = "translate(" + ((j-1)*294 + 40.5) + "px, " + (gridConfig[(2*i-1)*2**(j-1)-1]+7) + "px)";
+    
+      box = document.querySelector(".boxbg[data-round=" + CSS.escape(j) + "][data-set=" + CSS.escape(i) + "][data-p=" + CSS.escape(2) + "]");
+    box.style.transform = "translate(" + ((j-1)*294 + 40.5) + "px, " + (gridConfig[(2*i-1)*2**(j-1)]+3.5) + "px)";
+    
+    bar = document.querySelector(".hbar[data-round=" + CSS.escape(j) + "][data-set=" + CSS.escape(i) + "]");
+    if (bar != null) {
+          bar.style.transform = "translate(" + (((j-1)*270 + 8.5) + 6*(j-1.5)**2) + "px, " + (gridConfig[(2*i-1)*2**(j-1)]-7) + "px)";
+    bar.style.width = ((j-1)*12 + 270) + "px";
+    }
+
+    
+        bar = document.querySelector(".vbar[data-round=" + CSS.escape(j) + "][data-set=" + CSS.escape(i) + "]");
+        if (bar != null) {
+          bar.style.transform = "translate(" + (((j-1)*270 + 8.5) + 6*(j-1.5)**2) + "px, " + (gridConfig[2**j*(i-1) + 2**(j-2)]-7) + "px)";
+          bar.style.height = (2**(j-2)*123 + 6) + "px";
+        }
+  }
+}
+
+    // 3rd place match
+    hero = document.querySelector(".heroWrapper[data-round=" + CSS.escape(4) + "][data-set=" + CSS.escape(2) + "][data-p=" + CSS.escape(1) + "]");
+    hero.style.transform = "translate(" + ((4-1)*294 + 40.5) + "px, " + (gridConfig[11]+7) + "px)";
+    hero = document.querySelector(".heroWrapper[data-round=" + CSS.escape(4) + "][data-set=" + CSS.escape(2) + "][data-p=" + CSS.escape(2) + "]");
+    hero.style.transform = "translate(" + ((4-1)*294 + 40.5) + "px, " + (gridConfig[12]+3.5) + "px)";
+        box = document.querySelector(".boxbg[data-round=" + CSS.escape(4) + "][data-set=" + CSS.escape(2) + "][data-p=" + CSS.escape(1) + "]");
+    box.style.transform = "translate(" + ((4-1)*294 + 40.5) + "px, " + (gridConfig[11]+7) + "px)";
+    box = document.querySelector(".boxbg[data-round=" + CSS.escape(4) + "][data-set=" + CSS.escape(2) + "][data-p=" + CSS.escape(2) + "]");
+    box.style.transform = "translate(" + ((4-1)*294 + 40.5) + "px, " + (gridConfig[12]+3.5) + "px)";
+    
+    // champion and 3rd place finisher
+    hero = document.querySelector(".heroWrapper[data-round=" + CSS.escape(5) + "][data-set=" + CSS.escape(1) + "][data-p=" + CSS.escape(1) + "]");
+    hero.style.transform = "translate(" + ((5-1)*294 + 40.5) + "px, " + ((gridConfig[7]+gridConfig[8])/2+7) + "px)";
+    hero = document.querySelector(".heroWrapper[data-round=" + CSS.escape(5) + "][data-set=" + CSS.escape(2) + "][data-p=" + CSS.escape(1) + "]");
+    hero.style.transform = "translate(" + ((5-1)*294 + 40.5) + "px, " + ((gridConfig[11]+gridConfig[12])/2+3.5) + "px)";
+        box = document.querySelector(".boxbg[data-round=" + CSS.escape(5) + "][data-set=" + CSS.escape(1) + "][data-p=" + CSS.escape(1) + "]");
+    box.style.transform = "translate(" + ((5-1)*294 + 40.5) + "px, " + ((gridConfig[7]+gridConfig[8])/2+7) + "px)";
+    box = document.querySelector(".boxbg[data-round=" + CSS.escape(5) + "][data-set=" + CSS.escape(2) + "][data-p=" + CSS.escape(1) + "]");
+    box.style.transform = "translate(" + ((5-1)*294 + 40.5) + "px, " + ((gridConfig[11]+gridConfig[12])/2+3.5) + "px)";
+
+function reset() {
+      for (let i = 2; i <= 4; i++) {
+      for (let j = 1; j <= sets[i-2]; j++) {
+        resetPick(document.querySelector(".heroWrapper[data-round=" + CSS.escape(i) + "][data-set=" + CSS.escape(j) + "][data-p=" + CSS.escape(1) + "]"));
+        resetPick(document.querySelector(".heroWrapper[data-round=" + CSS.escape(i) + "][data-set=" + CSS.escape(j) + "][data-p=" + CSS.escape(2) + "]"));
+      }
+    }
+    resetPick(document.querySelector(".heroWrapper[data-round=" + CSS.escape(5) + "][data-set=" + CSS.escape(1) + "][data-p=" + CSS.escape(1) + "]"));
+    resetPick(document.querySelector(".heroWrapper[data-round=" + CSS.escape(5) + "][data-set=" + CSS.escape(2) + "][data-p=" + CSS.escape(1) + "]"));
+}
+
+function resetPick(x) {
+  x.setAttribute("data-player", null);
+  x.style.display = "none";
+  x.children[0].textContent = "";
+  x.children[1].children[0].src = "";
+}
+
+function g(x) {
+  
+  player = x.getAttribute("data-player");
+  round = parseInt(x.getAttribute("data-round"))+1;
+  if (round == 5) {
+      match = parseInt(x.getAttribute("data-set"));
+      p = 1;
+  } else {
+      match = Math.round(parseInt(x.getAttribute("data-set"))/2);
+      p = -1*(parseInt(x.getAttribute("data-set")) % 2) + 2;
+  }
+
+  next = document.querySelector(".heroWrapper[data-round=" + CSS.escape(round) + "][data-set=" + CSS.escape(match) + "][data-p=" + CSS.escape(p) + "]");
+  
+  prior = next;
+  if (prior.getAttribute("data-player") != null) {
+    if (prior.getAttribute("data-player") != player) {
+      oldplayer = prior.getAttribute("data-player");
+      for (let i = round+1; i <= 3; i++) {
+        match2 = Math.round(parseInt(prior.getAttribute("data-set"))/2);
+        p2 = -1*(parseInt(prior.getAttribute("data-set")) % 2) + 2;
+        prior = document.querySelector(".heroWrapper[data-round=" + CSS.escape(i) + "][data-set=" + CSS.escape(match2) + "][data-p=" + CSS.escape(p2) + "]");
+        if (prior.getAttribute("data-player") == oldplayer) {
+          prior.setAttribute("data-player", null);
+          prior.style.display = "none";
+          prior.children[0].textContent = "";
+          prior.children[1].children[0].src = "";
+        }
+      }
+      if (round == 5) {
+        p2 = x.getAttribute("data-p");
+      } else {
+        p2 = -1*(parseInt(prior.getAttribute("data-set")) % 2) + 2;
+      }
+      
+      for (let i = 1; i <= 2; i++) {
+        // p2 = -1*(i % 2) + 2;
+        prior = document.querySelector(".heroWrapper[data-round=" + CSS.escape(4) + "][data-set=" + CSS.escape(i) + "][data-p=" + CSS.escape(p2) + "]");
+        if (prior.getAttribute("data-player") == oldplayer) {
+          prior.setAttribute("data-player", null);
+          prior.style.display = "none";
+          prior.children[0].textContent = "";
+          prior.children[1].children[0].src = "";
+        }
+      }
+      
+      for (let i = 1; i <= 2; i++) {
+        prior = document.querySelector(".heroWrapper[data-round=" + CSS.escape(5) + "][data-set=" + CSS.escape(i) + "][data-p=" + CSS.escape(1) + "]");
+        if (prior.getAttribute("data-player") == oldplayer) {
+          prior.setAttribute("data-player", null);
+          prior.style.display = "none";
+          prior.children[0].textContent = "";
+          prior.children[1].children[0].src = "";
+        }
+      }
+      
+      
+    }
+  }
+  
+  next.setAttribute("data-player", player);
+  next.style.display = "block";
+  //console.log(next.children);
+  next.children[0].textContent = player;
+  next.children[1].children[0].src = x.children[1].children[0].src;
+  
+  
+  finals = document.querySelector(".heroWrapper[data-round=" + CSS.escape(4) + "][data-set=" + CSS.escape(1) + "][data-p=" + CSS.escape(1) + "]");
+  
+  
+  
+  if (round == 4) {
+    if (x.getAttribute("data-p") == "1") {
+      py = "2";
+    } else {
+      py = "1";
+    }
+    y = document.querySelector(".heroWrapper[data-round=" + CSS.escape(x.getAttribute("data-round")) + "][data-set=" + CSS.escape(x.getAttribute("data-set")) + "][data-p=" + CSS.escape(py) + "]");
+    
+    if (y.getAttribute("data-player") != null) {
+    
+      next = document.querySelector(".heroWrapper[data-round=" + CSS.escape(round) + "][data-set=" + CSS.escape(match+1) + "][data-p=" + CSS.escape(p) + "]");
+      next.setAttribute("data-player", y.getAttribute("data-player"));
+      next.style.display = "block";
+      next.children[0].textContent = y.getAttribute("data-player");
+      next.children[1].children[0].src = y.children[1].children[0].src;
+    }
+  }
+  
+  
+  if (round == 3 & false) {
+      match2 = Math.round(match/2);
+      p2 = -1*(match % 2) + 2;
+      y = document.querySelector(".heroWrapper[data-round=" + CSS.escape(4) + "][data-set=" + CSS.escape(match2) + "][data-p=" + CSS.escape(p2) + "]");
+  
+    if (y.getAttribute("data-player") != null) {
+      next = document.querySelector(".heroWrapper[data-round=" + CSS.escape(4) + "][data-set=" + CSS.escape((match2*-1)+3) + "][data-p=" + CSS.escape(p2) + "]");
+      next.setAttribute("data-player", x.getAttribute("data-player"));
+      next.style.display = "block";
+      next.children[0].textContent = x.getAttribute("data-player");
+      next.children[1].children[0].src = x.children[1].children[0].src;
+    }
+  }
+  
+}
+
+const collectPicks = () => {
+  picks = [];
+for (let i = 2; i <= 4; i++) {
+  for (let j = 1; j <= sets[i-2]; j++) {
+    picks.push(document.querySelector(".heroWrapper[data-round=" + CSS.escape(i) + "][data-set=" + CSS.escape(j) + "][data-p=" + CSS.escape(1) + "]").getAttribute("data-player"));
+    picks.push(document.querySelector(".heroWrapper[data-round=" + CSS.escape(i) + "][data-set=" + CSS.escape(j) + "][data-p=" + CSS.escape(2) + "]").getAttribute("data-player"));
+  }
+}
+picks.push(document.querySelector(".heroWrapper[data-round=" + CSS.escape(5) + "][data-set=" + CSS.escape(1) + "][data-p=" + CSS.escape(1) + "]").getAttribute("data-player"));
+picks.push(document.querySelector(".heroWrapper[data-round=" + CSS.escape(5) + "][data-set=" + CSS.escape(2) + "][data-p=" + CSS.escape(1) + "]").getAttribute("data-player"));
+return picks;
+}
+
+const validateBracket = () => {
+        picks = collectPicks();
+
+    if (picks.some(nonull)) {
+        alert("Please choose the results of all sets!");
+        return false;
+    } else {
+        return true;
+    }
+};
+
+const step1 = () => {
+  reset();
+  $('#step-2').addClass('hidden');
+  $('#step-3').addClass('hidden');
+  $('#step-4').addClass('hidden');
+  $('#step-1').removeClass('hidden');
+};
+
+const step2 = () => {
+  //reset();
+  $('#step-1').addClass('hidden');
+  $('#step-3').addClass('hidden');
+  $('#step-4').addClass('hidden');
+  $('#step-2').removeClass('hidden');
+};
+
+const step3 = () => {
+    //if (validateBracket()) {
+        $('#step-1').addClass('hidden');
+        $('#step-2').addClass('hidden');
+        $('#step-3').removeClass('hidden');
+    //}
+};
+
+const step4 = () => {
+    if (validateBracket()) {
+        $('#step-1').addClass('hidden');
+        $('#step-5').removeClass('hidden');
+    }
+};
+
+async function postData(data = {}) {
+    // Default options are marked with *
+    const response = await fetch('hc5.aoe2.se/bracket/guess.php', {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, *same-origin, omit
+        headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        redirect: 'follow', // manual, *follow, error
+        referrerPolicy: 'no-referrer', // no-referrer, *client
+        body: JSON.stringify(data) // body data type must match "Content-Type" header
+    });
+    return await response.json(); // parses JSON response into native JavaScript objects
+}
+
+const submit = () => {
+    const picks = collectPicks();
+
+    const username = $('#inputUsername').val();
+
+    if (username === '') {
+        alert('Please provide a username!');
+        return;
+    }
+
+    postData({username, guess: picks})
+        .then((data) => {
+            if (data.success) {
+                $('#response').html(data.message);
+                step5();
+            } else {
+                alert(data.message);
+            }
+        });
+};
+</script>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+</body>
+</html>

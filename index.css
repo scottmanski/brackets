@@ -1,0 +1,146 @@
+
+html {
+    min-height: 100%;
+    background: radial-gradient(circle at center, #2369A8 0, #323D4B 100%);
+    background-size: cover;
+}
+
+body {
+  font-family: Garamond !important;
+  color: white !important;
+  background: none !important;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.container {
+  max-width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#step-1 {
+  max-width: 960px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#step-3 {
+  max-width: 720px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mainWrapper {
+    position: absolute;
+    /* width: 1920px; */
+    height: 1080px;
+    /* background-image: url(./img/BG.png); 
+    background-color: #315270; */
+}
+
+.heroWrapper {
+    position: absolute;
+    width: 183px;
+    height: 42px;
+    background: url(./img/HeroBracket.png) center center;
+    background-size: 100%;
+    box-shadow: 0px 0 9px #000;
+    cursor: pointer;
+}
+
+.heroWrapper .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    font-family: "Nexa";
+    color: #fff;
+    width: 138.75px;
+    height: 36px;
+    top: 3px;
+    left: 42.75px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+}
+
+.heroWrapper .icon {
+    width: 35.25px;
+    height: 35.25px;
+    position: absolute;
+    top: 3.75px;
+    left: 3.75px;
+}
+
+.heroWrapper .icon img {
+    width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.boxbg {
+    background: #30465d;
+    position: absolute;
+    width: 183px;
+    height: 42px;
+    outline: 3px solid #223140;
+}
+
+.bracket {
+    /*background: #4898bf; */
+    background: #fff; 
+    position: absolute;
+}
+
+.vbar {
+   width: 6px;
+}
+
+.hbar {
+   height: 6px;
+}
+
+.logo {
+   position: absolute;
+   top: 450px;
+   left: 615px; 
+   width: 200px;
+   z-index: 99;
+   -webkit-filter: drop-shadow(0px 0px 50px rgba(0,0,0,1));
+}
+
+.round {
+  color: #fff;
+  text-align: center;
+  width: 270px;
+  position: absolute;
+  top: 10px;
+  line-height: 30px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.dates {
+  font-size: 20px;
+}
+
+.bo {
+  font-size: 18px;
+  line-height: 18px;
+}
+
