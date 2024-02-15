@@ -100,8 +100,8 @@ body {
 }
 
 .bracket {
-    /*background: #4898bf; */
-    background: #fff; 
+    background: #4898bf;
+    /* background: #fff; */
     position: absolute;
 }
 
