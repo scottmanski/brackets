@@ -630,9 +630,11 @@ const step3 = () => {
     }
 };
 
-const step4 = () => {
+const step5 = () => {
     if (validateBracket()) {
         $('#step-1').addClass('hidden');
+        $('#step-2').addClass('hidden');
+        $('#step-3').addClass('hidden');
         $('#step-5').removeClass('hidden');
     }
 };
