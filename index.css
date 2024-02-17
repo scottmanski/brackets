@@ -40,6 +40,10 @@ body {
     margin-left: auto;
 }
 
+#step-5 {
+  padding-top: 3em;
+}
+
 .mainWrapper {
     position: absolute;
     /* width: 1920px; */
