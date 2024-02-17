@@ -1,7 +1,8 @@
 
 html {
     min-height: 100%;
-    background: radial-gradient(circle at center, #2369A8 0, #323D4B 100%);
+    /* background: radial-gradient(circle at center, #2369A8 0, #323D4B 100%); */
+    background: radial-gradient(circle at center, #31516e 0, #131521 100%);
     background-size: cover;
 }
 
