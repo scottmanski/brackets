@@ -4,33 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="index.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="custom.js"></script>
 </head>
 <body>
   
 <div class="container">
-<div id="step-1">
-        <p class="text-center"><img src="img/HC5_logo.png" alt="Hidden Cup 5 logo" width="25%"/></p>
-        <p class="lead">Welcome to the Hidden Cup 5 Bracket challenge!</p>
-        <p>Here you can predict the results of each matchup.
-           All brackets will be published on a scoreboard when the competition starts.
-           The persons with most correct predictions win!</p>
-        <p>There is no prize. But you may get the right to brag about being at the top of the scoreboard.</p>
-        <p style="color: #ccc;">If you have special knowledge, that means if you are an admin for HC5 or a player in the
-            top 16, you can still participate, but correct predictions will be a lot less impressive.</p>
-            <p id="countdown" style="font-size: 1.5em;"> Submissions close in: 
-                     <span id="days"></span> days
-                     <span id="hours"></span> hours
-                     <span id="minutes"></span> minutes
-                     <span id="seconds"></span> seconds
-            </p>
-            <p id="live" style="font-size: 1.5em; display: none;">Submissions are now closed.</p>
-        <p class="text-center">
-            <button id="next" class="btn btn-secondary btn-lg mb-5" onclick="step2()" style="display: none;">I understand that. Next!</button>
-        </p>
-    </div>
 
-<div id="step-2" class="mainWrapper hidden">
+
+<div id="step-2" class="mainWrapper">
   
 
 <div data-round="1" data-set="1" data-p="1" class="boxbg"></div>
@@ -364,7 +344,7 @@
 <p class="text-center" style="position: absolute; top: 1000px; left: 400px; width: 1000px; padding-bottom: 2em;">
             <button class="btn btn-secondary btn-lg mb-5" onclick="step1()">Back</button>
             <button class="btn btn-secondary btn-lg mb-5" onclick="reset()">Reset</button>
-            <button id="submitbutton" class="btn btn-primary btn-lg mb-5" onclick="step3()">Confirm and Next</button>
+            <button class="btn btn-primary btn-lg mb-5" onclick="step3()">Confirm and Next</button>
         </p>
 </div>
 

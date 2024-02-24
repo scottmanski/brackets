@@ -59,6 +59,8 @@ body {
 
 .heroWrapper {
     position: absolute;
+    /*width: calc(42/78*382px);
+    height: 42px; */
     width: 183px;
     height: 42px;
     background: url(./img/HeroBracket.png) center center;
@@ -66,6 +68,17 @@ body {
     box-shadow: 0px 0 9px #000;
     cursor: pointer;
 }
+
+/*
+.heroWrapper {
+    position: absolute;
+    width: 183px;
+    height: 42px;
+    background: url(./img/HeroBracket.png) center center;
+    background-size: 100%;
+    box-shadow: 0px 0 9px #000;
+    cursor: pointer;
+} */
 
 .heroWrapper .name {
     display: flex;
