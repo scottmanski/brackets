@@ -2,12 +2,11 @@
 import Data from '../data/Data.json' assert { type: 'json' };
 import correct from '../data/correct.json' assert { type: 'json' };
 
-//console.log(correct);
 
 //console.log(Data[0]["X"+2]);
 for (let i=0; i<Data.length; i++) {
   let numcorrect = 0;
-  for (let j=1; j<19; j++) {
+  for (let j=1; j<17; j++) {
     if (Data[i]["X"+(j+1)] == correct[0][j]) {
       numcorrect++;
     }
