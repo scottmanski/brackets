@@ -149,6 +149,24 @@ body {
    width: 6px;
 }
 
+.ibar {
+  display: none;
+   background: red;
+   position: absolute;
+   height: 3px;
+   width: 212px;
+   box-shadow: 0px 0 9px #000;
+}
+
+.check {
+  display: none;
+  position: absolute;
+  font-size: 28px; 
+  color: green; 
+  font-weight: 900;
+  text-shadow: 0px 0 15px #000;
+}
+
 .hbar {
    height: 6px;
 }
@@ -569,4 +587,150 @@ body {
 #player521 {
   left: 1216.5px;
   top: 802.5px;
+}
+
+#incorrect211 {
+  left: 320px;
+  top: 177px;
+}
+#incorrect221 {
+  left: 320px;
+  top: 424px;
+}
+#incorrect231 {
+  left: 320px;
+  top: 671px;
+}
+#incorrect241 {
+  left: 320px;
+  top: 918px;
+}
+#incorrect212 {
+  left: 320px;
+  top: 236.5px;
+}
+#incorrect222 {
+  left: 320px;
+  top: 483.5px;
+}
+#incorrect232 {
+  left: 320px;
+  top: 730.5px;
+}
+#incorrect242 {
+  left: 320px;
+  top: 977.5px;
+}
+#incorrect311 {
+  left: 614px;
+  top: 300px;
+}
+#incorrect321 {
+  left: 614px;
+  top: 794px;
+}
+#incorrect312 {
+  left: 614px;
+  top: 360.5px;
+}
+#incorrect322 {
+  left: 614px;
+  top: 854.5px;
+}
+#incorrect411 {
+  left: 908px;
+  top: 547px;
+}
+#incorrect421 {
+  left: 908px;
+  top: 794px;
+}
+#incorrect412 {
+  left: 908px;
+  top: 607.5px;
+}
+#incorrect422 {
+  left: 908px;
+  top: 854.5px;
+}
+#incorrect511 {
+  left: 1202px;
+  top: 579px;
+}
+#incorrect521 {
+  left: 1202px;
+  top: 822.5px;
+}
+
+#correct211 {
+  left: 524.5px;
+  top: 160px;
+}
+#correct221 {
+  left: 524.5px;
+  top: 407px;
+}
+#correct231 {
+  left: 524.5px;
+  top: 654px;
+}
+#correct241 {
+  left: 524.5px;
+  top: 901px;
+}
+#correct212 {
+  left: 524.5px;
+  top: 219.5px;
+}
+#correct222 {
+  left: 524.5px;
+  top: 466.5px;
+}
+#correct232 {
+  left: 524.5px;
+  top: 713.5px;
+}
+#correct242 {
+  left: 524.5px;
+  top: 960.5px;
+}
+#correct311 {
+  left: 818.5px;
+  top: 283px;
+}
+#correct321 {
+  left: 818.5px;
+  top: 777px;
+}
+#correct312 {
+  left: 818.5px;
+  top: 343.5px;
+}
+#correct322 {
+  left: 818.5px;
+  top: 837.5px;
+}
+#correct411 {
+  left: 1112.5px;
+  top: 530px;
+}
+#correct421 {
+  left: 1112.5px;
+  top: 777px;
+}
+#correct412 {
+  left: 1112.5px;
+  top: 590.5px;
+}
+#correct422 {
+  left: 1112.5px;
+  top: 837.5px;
+}
+#correct511 {
+  left: 1406.5px;
+  top: 562px;
+}
+#correct521 {
+  left: 1406.5px;
+  top: 805.5px;
 }
