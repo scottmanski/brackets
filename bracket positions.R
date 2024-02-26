@@ -172,3 +172,30 @@ cat(paste0(html, collapse = "\n"))
 
 
 
+positions <- bind_rows(lapply(2:length(Sets), function(i) {
+  expand.grid("round" = i, "set" = 1:Sets[i], "p" = 1:2)
+}))
+positions <- positions[!(positions$round == 5 & positions$p == 2), ]
+
+positions$left <- (positions$round-1)*294 + 40.5 + 190
+positions$top <- gridConfig[(2*positions$set-1)*2^(positions$round-1)+positions$p-1]+pOffset[positions$p] + 3
+positions$top[positions$round == 4 & positions$set == 2] <- c(gridConfig[12]+7, gridConfig[13]+3.5) + 3
+positions$top[positions$round == 5] <- c((gridConfig[8]+gridConfig[9])/2+7,
+                                         (gridConfig[12]+gridConfig[13])/2+3.5) + 3
+
+css <- vector()
+html <- vector()
+for (i in 1:nrow(positions)) {
+  css <- c(css, paste0("#correct", positions$round[i], positions$set[i], positions$p[i],
+                       " {\n  left: ", positions$left[i],
+                       "px;\n  top: ", positions$top[i], "px;\n}"))
+  html <- c(html, paste0("<div id=\"correct", 
+                         positions$round[i], positions$set[i], positions$p[i],
+                         "\" class=\"check\">&#10003;</div>"))
+}
+
+cat(paste0(css, collapse = "\n"))
+cat(paste0(html, collapse = "\n"))
+
+
+
