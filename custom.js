@@ -59,7 +59,6 @@ for (let j = 1; j <= 4; j++) {
   for (let i = 1; i <= Sets[j-1]; i++) {
     hero = document.querySelector(".heroWrapper[data-round=" + CSS.escape(j) + "][data-set=" + CSS.escape(i) + "][data-p=" + CSS.escape(1) + "]");
     hero.style.transform = "translate(" + ((j-1)*294 + 40.5) + "px, " + (gridConfig[(2*i-1)*2**(j-1)-1]+7) + "px)";
-    console.log((2*i-1)*2**(j-1)-1);
     
       hero = document.querySelector(".heroWrapper[data-round=" + CSS.escape(j) + "][data-set=" + CSS.escape(i) + "][data-p=" + CSS.escape(2) + "]");
     hero.style.transform = "translate(" + ((j-1)*294 + 40.5) + "px, " + (gridConfig[(2*i-1)*2**(j-1)]+3.5) + "px)";

@@ -15,7 +15,7 @@
 <body>
   
 <div class="container">
-<div id="step-1">
+<div id="step-1" class="hidden">
         <p class="text-center"><img src="img/HC5_logo.png" alt="Hidden Cup 5 logo" width="25%"/></p>
         <p class="lead">Welcome to the Hidden Cup 5 Bracket challenge!</p>
         <p>Here you can predict the results of each matchup.
@@ -395,83 +395,238 @@
         <p id="response" class="lead text-center mt-5"></p>
     </div>
 
-<div id="step-6" class="mainWrapper hidden">
-  <table id="submissions" class="display nowrap"></table>
+<div id="step-6" class="mainWrapper" style="display: flex; margin: 15px; padding-right: 1500px;">
   
-  <div data-round="1" data-set="1" data-p="1" class="boxbg"></div>
-<div data-round="1" data-set="1" data-p="2" class="boxbg"></div>
-<div data-round="1" data-set="2" data-p="1" class="boxbg"></div>
-<div data-round="1" data-set="2" data-p="2" class="boxbg"></div>
-<div data-round="1" data-set="3" data-p="1" class="boxbg"></div>
-<div data-round="1" data-set="3" data-p="2" class="boxbg"></div>
-<div data-round="1" data-set="4" data-p="1" class="boxbg"></div>
-<div data-round="1" data-set="4" data-p="2" class="boxbg"></div>
-<div data-round="1" data-set="5" data-p="1" class="boxbg"></div>
-<div data-round="1" data-set="5" data-p="2" class="boxbg"></div>
-<div data-round="1" data-set="6" data-p="1" class="boxbg"></div>
-<div data-round="1" data-set="6" data-p="2" class="boxbg"></div>
-<div data-round="1" data-set="7" data-p="1" class="boxbg"></div>
-<div data-round="1" data-set="7" data-p="2" class="boxbg"></div>
-<div data-round="1" data-set="8" data-p="1" class="boxbg"></div>
-<div data-round="1" data-set="8" data-p="2" class="boxbg"></div>
-
-<div data-round="2" data-set="1" data-p="1" class="boxbg"></div>
-<div data-round="2" data-set="1" data-p="2" class="boxbg"></div>
-<div data-round="2" data-set="2" data-p="1" class="boxbg"></div>
-<div data-round="2" data-set="2" data-p="2" class="boxbg"></div>
-<div data-round="2" data-set="3" data-p="1" class="boxbg"></div>
-<div data-round="2" data-set="3" data-p="2" class="boxbg"></div>
-<div data-round="2" data-set="4" data-p="1" class="boxbg"></div>
-<div data-round="2" data-set="4" data-p="2" class="boxbg"></div>
-
-<div data-round="3" data-set="1" data-p="1" class="boxbg"></div>
-<div data-round="3" data-set="1" data-p="2" class="boxbg"></div>
-<div data-round="3" data-set="2" data-p="1" class="boxbg"></div>
-<div data-round="3" data-set="2" data-p="2" class="boxbg"></div>
-
-<div data-round="4" data-set="1" data-p="1" class="boxbg"></div>
-<div data-round="4" data-set="1" data-p="2" class="boxbg"></div>
-<div data-round="4" data-set="2" data-p="1" class="boxbg"></div>
-<div data-round="4" data-set="2" data-p="2" class="boxbg"></div>
-
-<div data-round="5" data-set="1" data-p="1" class="boxbg"></div>
-<div data-round="5" data-set="2" data-p="1" class="boxbg"></div>
-
-
-<div data-round="1" data-set="1" class="bracket hbar"></div>
-<div data-round="1" data-set="2" class="bracket hbar"></div>
-<div data-round="1" data-set="3" class="bracket hbar"></div>
-<div data-round="1" data-set="4" class="bracket hbar"></div>
-<div data-round="1" data-set="5" class="bracket hbar"></div>
-<div data-round="1" data-set="6" class="bracket hbar"></div>
-<div data-round="1" data-set="7" class="bracket hbar"></div>
-<div data-round="1" data-set="8" class="bracket hbar"></div>
-
-<div data-round="2" data-set="1" class="bracket hbar"></div>
-<div data-round="2" data-set="2" class="bracket hbar"></div>
-<div data-round="2" data-set="3" class="bracket hbar"></div>
-<div data-round="2" data-set="4" class="bracket hbar"></div>
-
-<div data-round="3" data-set="1" class="bracket hbar"></div>
-<div data-round="3" data-set="2" class="bracket hbar"></div>
-
-<div data-round="4" data-set="1" class="bracket hbar"></div>
-<!-- <div data-round="4" data-set="2" class="bracket hbar"></div> -->
-
-
-
-
-<div data-round="2" data-set="1" class="bracket vbar"></div>
-<div data-round="2" data-set="2" class="bracket vbar"></div>
-<div data-round="2" data-set="3" class="bracket vbar"></div>
-<div data-round="2" data-set="4" class="bracket vbar"></div>
-
-<div data-round="3" data-set="1" class="bracket vbar"></div>
-<div data-round="3" data-set="2" class="bracket vbar"></div>
-
-<div data-round="4" data-set="1" class="bracket vbar"></div>
+<div>
+  <table id="submissions" class="display"></table>
 </div>
 
+<div class="col-sm-10" style="position: relative;">
+  <div id="boxbg111" class="boxbg"></div>
+<div id="boxbg121" class="boxbg"></div>
+<div id="boxbg131" class="boxbg"></div>
+<div id="boxbg141" class="boxbg"></div>
+<div id="boxbg151" class="boxbg"></div>
+<div id="boxbg161" class="boxbg"></div>
+<div id="boxbg171" class="boxbg"></div>
+<div id="boxbg181" class="boxbg"></div>
+<div id="boxbg112" class="boxbg"></div>
+<div id="boxbg122" class="boxbg"></div>
+<div id="boxbg132" class="boxbg"></div>
+<div id="boxbg142" class="boxbg"></div>
+<div id="boxbg152" class="boxbg"></div>
+<div id="boxbg162" class="boxbg"></div>
+<div id="boxbg172" class="boxbg"></div>
+<div id="boxbg182" class="boxbg"></div>
+<div id="boxbg211" class="boxbg"></div>
+<div id="boxbg221" class="boxbg"></div>
+<div id="boxbg231" class="boxbg"></div>
+<div id="boxbg241" class="boxbg"></div>
+<div id="boxbg212" class="boxbg"></div>
+<div id="boxbg222" class="boxbg"></div>
+<div id="boxbg232" class="boxbg"></div>
+<div id="boxbg242" class="boxbg"></div>
+<div id="boxbg311" class="boxbg"></div>
+<div id="boxbg321" class="boxbg"></div>
+<div id="boxbg312" class="boxbg"></div>
+<div id="boxbg322" class="boxbg"></div>
+<div id="boxbg411" class="boxbg"></div>
+<div id="boxbg421" class="boxbg"></div>
+<div id="boxbg412" class="boxbg"></div>
+<div id="boxbg422" class="boxbg"></div>
+<div id="boxbg511" class="boxbg"></div>
+<div id="boxbg521" class="boxbg"></div>
+
+
+<div id="hbar11" class="bracket hbar"></div>
+<div id="hbar12" class="bracket hbar"></div>
+<div id="hbar13" class="bracket hbar"></div>
+<div id="hbar14" class="bracket hbar"></div>
+<div id="hbar15" class="bracket hbar"></div>
+<div id="hbar16" class="bracket hbar"></div>
+<div id="hbar17" class="bracket hbar"></div>
+<div id="hbar18" class="bracket hbar"></div>
+<div id="hbar21" class="bracket hbar"></div>
+<div id="hbar22" class="bracket hbar"></div>
+<div id="hbar23" class="bracket hbar"></div>
+<div id="hbar24" class="bracket hbar"></div>
+<div id="hbar31" class="bracket hbar"></div>
+<div id="hbar32" class="bracket hbar"></div>
+<div id="hbar41" class="bracket hbar"></div>
+
+<!-- <div data-round="4" data-set="2" class="bracket hbar"></div> -->
+
+<div id="vbar21" class="bracket vbar"></div>
+<div id="vbar22" class="bracket vbar"></div>
+<div id="vbar23" class="bracket vbar"></div>
+<div id="vbar24" class="bracket vbar"></div>
+<div id="vbar31" class="bracket vbar"></div>
+<div id="vbar32" class="bracket vbar"></div>
+<div id="vbar41" class="bracket vbar"></div>
+
+
+
+
+<div id="player111" data-player="Vasco da Gama" class="heroWrapper2">
+  <div class="name">Vasco da Gama</div>
+  <div class="icon"><img src="img/heroes/Vasco da Gama.png"></div>
+</div>
+
+<div id="player112" data-player="Pachacuti" class="heroWrapper2">
+  <div class="name">Pachacuti</div>
+  <div class="icon"><img src="img/heroes/Pachacuti.png"></div>
+</div>
+
+<div id="player121" data-player="Sumanguru" class="heroWrapper2">
+  <div class="name">Sumanguru</div>
+  <div class="icon"><img src="img/heroes/Sumanguru.png"></div>
+</div>
+
+<div id="player122" data-player="Jean Bureau" class="heroWrapper2">
+  <div class="name">Jean Bureau</div>
+  <div class="icon"><img src="img/heroes/Jean Bureau.png"></div>
+</div>
+
+<div id="player131" data-player="Jadwiga" class="heroWrapper2">
+  <div class="name">Jadwiga</div>
+  <div class="icon"><img src="img/heroes/Jadwiga.png"></div>
+</div>
+
+<div id="player132" data-player="Otto the Great" class="heroWrapper2">
+  <div class="name">Otto the Great</div>
+  <div class="icon"><img src="img/heroes/Otto the Great.png"></div>
+</div>
+
+<div id="player141" data-player="Gregory VII" class="heroWrapper2">
+  <div class="name">Gregory VII</div>
+  <div class="icon"><img src="img/heroes/Gregory VII.png"></div>
+</div>
+
+<div id="player142" data-player="Gajah Mada" class="heroWrapper2">
+  <div class="name">Gajah Mada</div>
+  <div class="icon"><img src="img/heroes/Gajah Mada.png"></div>
+</div>
+
+<div id="player151" data-player="King Stephen" class="heroWrapper2">
+  <div class="name">King Stephen</div>
+  <div class="icon"><img src="img/heroes/King Stephen.png"></div>
+</div>
+
+<div id="player152" data-player="Selim the Grim" class="heroWrapper2">
+  <div class="name">Selim the Grim</div>
+  <div class="icon"><img src="img/heroes/Selim the Grim.png"></div>
+</div>
+
+
+<div id="player161" data-player="Khosrau" class="heroWrapper2">
+  <div class="name">Khosrau</div>
+  <div class="icon"><img src="img/heroes/Khosrau.png"></div>
+</div>
+
+<div id="player162" data-player="Emperor Sigismund" class="heroWrapper2">
+  <div class="name">Emperor Sigismund</div>
+  <div class="icon"><img src="img/heroes/Emperor Sigismund.png"></div>
+</div>
+
+
+<div id="player171" data-player="Alfred the Alpaca" class="heroWrapper2">
+  <div class="name">Alfred the Alpaca</div>
+  <div class="icon"><img src="img/heroes/Alfred the Alpaca.png"></div>
+</div>
+
+<div id="player172" data-player="Jan Zizka" class="heroWrapper2">
+  <div class="name">Jan Zizka</div>
+  <div class="icon"><img src="img/heroes/Jan Zizka.png"></div>
+</div>
+
+
+<div id="player181" data-player="Alexios Komnenos" class="heroWrapper2">
+  <div class="name">Alexios Komnenos</div>
+  <div class="icon"><img src="img/heroes/Alexios Komnenos.png"></div>
+</div>
+
+<div id="player182" data-player="Robert Guiscard" class="heroWrapper2">
+  <div class="name">Robert Guiscard</div>
+  <div class="icon"><img src="img/heroes/Robert Guiscard.png"></div>
+</div>
+
+
+<div id="player211" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player221" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player231" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player241" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player212" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player222" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player232" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player242" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player311" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player321" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player312" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player322" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player411" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player421" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player412" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player422" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player511" class="heroWrapper2">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+<div id="player521" class="heroWrapper2" style="padding-right: 50px;">
+<div class="name"></div>
+<div class="icon"><img></div>
+</div>
+
+
+</div>
+</div>
 
 </div>
 
