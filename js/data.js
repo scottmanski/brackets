@@ -19,7 +19,9 @@ for (let i=0; i<Data.length; i++) {
   Data[i]["correct"] = numcorrect;
 }
 
-//console.log(Data);
+//console.log(Data.filter(element => element.correct == correct.length-1).length);
+
+document.getElementById("perfect").children[0].innerText = "Only " + Data.filter(element => element.correct == correct.length-1).length + " perfect brackets remain!";
 
 var dt = Data;
 
